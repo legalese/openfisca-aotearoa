@@ -86,7 +86,15 @@ Run the executable:
 
 ## NLG Styles
 
-Try other --nlgstyle values "abstract", "neutral", "concrete", and "algebra".
+Try other --nlgstyle values:
+- algebra
+- concrete
+- neutral
+- abstract
+- obfuscated
+- yaml
+
+Obfuscated may get you text which is eerily similar to actual legislation!
 
 Concrete shows all numerical values used to arrive at the answer.
 
@@ -129,6 +137,8 @@ Abstract has the fewest numerical values.
     | | the maximum rebate allowed
 
 Neutral is kind of a mix between the two.
+
+Yaml produces test cases suitable for openfisca test.
 
 ## Ranges
 
@@ -222,7 +232,7 @@ The language available here is a fragment of L4 specialized for mathematical exp
 
 Future releases of this software may integrate other L4 modules to:
 
-- parse YAML, so it can run tests
+- parse YAML, so it can import tests
 
 - parse Python, (or at least OpenFisca's subset of Python), so it can read existing code
 
@@ -237,6 +247,10 @@ Future releases of this software may integrate other L4 modules to:
 - expand the expressiveness of the natural language generation to more closely approximate statutory English; support other dialects as well
 
 - output to other natural languages like Québécois
+
+- output to LegalRuleML
+
+- output to other languages like XAlgorithms and Accord Project's Ergo
 
 - output to Excel format with formulas built in
 
